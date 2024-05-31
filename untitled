@@ -21,15 +21,32 @@ class VoldemortsRevenge{
 
             else if(room==2)
             {
-                System.out.println("You")
+                System.out.println("You are on a path");
+                System.out.println("To the north is the forbidden Forest. the the esat, Voldemort's Castle, and to the south a river.");
             }
+            else if (room==3)
+            {
+                System.out.println("You are at the entreance to Voldemort's Castle.");
+                System.out.println("There is a path to the west.");
+            }
+            
+            // Print inventory
+            System.out.print("You have: ");
+            if(hasAmulet)
+            {
+                System.out.print("amulet ");
+            }
+            System.out.println();
+            System.out.println("Score: "+score);
+            
+             // get player command
+            System.out.println("> ");
+            command = sc.nextLine();
+
+            //deal with player input
         }
 
-        // get player command
-        System.out.println("> ");
-        command = sc.nextLine();
-
-        //deal with player input
+      
 
     }
 }
